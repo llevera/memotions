@@ -14,8 +14,8 @@ namespace Memotions
 {
 	public class MemotionsViewModel : INotifyPropertyChanged
 	{
-		string bingSearchKey = "c551b667b8a44e70b0565aca068d550b";
-		string emotionServiceKey = "072aebe1e1a149d0ba8d0e7375afee9e";
+		string bingSearchKey = "<Insert Your Bing Key>";
+		string emotionServiceKey = "<Insert Your Emotions Key>";
 
 		bool _isMyPhotoBusy;
 
