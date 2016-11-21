@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Memotions" x:Class="Memotions.MemotionsPage">
+	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+	<Grid Margin="20">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*" />
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="1*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="5*"/>
+			<RowDefinition Height="5*"/>
+		</Grid.RowDefinitions>
+		<Label Text="Show me as a..." Grid.Column="0" Grid.Row="0" YAlign="Center" FontSize="Small" VerticalOptions="Center" HorizontalOptions="Start"/>
+		<Entry Text="{Binding SearchTerm}" Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/>
+		<Button x:Name="TakePhotoButton" Grid.Column="2" Grid.Row="0" Text="Go!" VerticalOptions="Center"/>
+		<Image Source="{Binding MyPhotoSource}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" BackgroundColor="Silver"/>
+		<ActivityIndicator IsRunning="{Binding IsMyPhotoBusy}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center"/>
+		<Image Source="{Binding MatchedPhotoSource}" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="Silver"/>
+		<ActivityIndicator IsRunning="{Binding IsMatchingImageBusy}" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center"/>
+	</Grid>
+</ContentPage>
