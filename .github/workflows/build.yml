@@ -47,6 +47,4 @@ jobs:
         shell: powershell
         run: |          
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"llevera_memotions" /o:"llevera-github" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet restore
-          msbuild SonarCloud.sln
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
