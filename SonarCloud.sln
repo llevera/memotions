@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memotions", "Memotions\Memotions.csproj", "{4664C2C3-1C6A-4802-BB4F-2BB357B4E35C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4664C2C3-1C6A-4802-BB4F-2BB357B4E35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4664C2C3-1C6A-4802-BB4F-2BB357B4E35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4664C2C3-1C6A-4802-BB4F-2BB357B4E35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4664C2C3-1C6A-4802-BB4F-2BB357B4E35C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
